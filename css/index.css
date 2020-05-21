@@ -1,1 +1,366 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  background-color: #333;
+}
+.center-content {
+  justify-content: center;
+  align-content: center;
+}
+.center-items {
+  justify-items: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.container1 {
+  background: #333;
+  list-style: none;
+  font-size: 1.2rem;
+  width: 35%;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.container1 header {
+  color: white;
+  margin-bottom: 20px;
+}
+.container1 header .name-contact .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container1 header .name-contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.container1 header .name-contact h3 {
+  font-size: 1.5rem;
+}
+.container1 header .nav {
+  margin: 20px 2px 20px 2px;
+  display: flex;
+  justify-content: center;
+}
+.container1 header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.container1 header .address {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  background: #8a8080;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container1 .Skills {
+  margin: 5% 1% 5% 1%;
+  color: white;
+}
+.container1 .Skills h1 {
+  font-size: 2.5rem;
+}
+.container1 .Skills li {
+  margin: 40px auto;
+  font-size: 1.5rem;
+}
+.container1 .Skills .bar {
+  background: #353b48;
+  display: flex;
+  flex-direction: column;
+  height: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: 0 0 10px #2187e7b3;
+  margin: 5% 0 5% 0;
+}
+.container1 .Skills .bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+.container1 .Skills .bar .html {
+  width: 90%;
+  animation: html 2s;
+}
+.container1 .Skills .bar .css {
+  width: 85%;
+  animation: css 2s;
+}
+.container1 .Skills .bar .js {
+  width: 75%;
+  animation: js 2s;
+}
+.container1 .Skills .bar .react {
+  width: 65%;
+  animation: react 2s;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.container1 .Education {
+  color: white;
+}
+.container1 .Education .Education-info {
+  margin: 5% 1% 5% 1%;
+}
+.container1 .Education .Education-info h1 {
+  font-size: 2.5rem;
+  margin: 5% 0 5% 0;
+}
+.container1 .Education .Education-info h2 {
+  font-size: 2rem;
+  margin: 5% 0 5% 0;
+}
+.container1 .Education .Education-info h3 {
+  font-size: 1.5rem;
+  margin: 5% 0 5% 0;
+}
+@media (max-width: 500px) {
+  .container1 {
+    background-color: #e2ab9b;
+  }
+  .container1 header {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  .container1 header a {
+    font-size: 1.8rem;
+    margin: 2% auto;
+    color: black;
+  }
+  .container1 header .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container1 header h1 {
+    justify-items: center;
+    align-items: center;
+  }
+  .container1 header .address {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}
+.container2 {
+  font-size: 1.5rem;
+  width: 65%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.container2 .summary p {
+  margin: 0 2% 0 2%;
+  font-size: 1.6rem;
+}
+.container2 h1 {
+  font-size: 3.5rem;
+  margin: 5% 2% 5% 2%;
+  display: flex;
+  justify-content: center;
+}
+.container2 h2 {
+  font-size: 2.2rem;
+  margin: 1%;
+}
+.container2 h3 {
+  font-size: 1.8rem;
+  margin: 1%;
+}
+.container2 h4 {
+  font-size: 1.6rem;
+  margin: 1%;
+}
+.container2 li {
+  font-size: 1.4rem;
+  margin: 1%;
+}
+.container2 .work {
+  margin: 5% 1% 5% 1%;
+}
+.container2 .lang {
+  display: flex;
+  flex-direction: row ;
+}
+@media (max-width: 800px) {
+  .container2 {
+    background-color: cornflowerblue;
+  }
+}

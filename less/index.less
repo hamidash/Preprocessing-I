@@ -54,6 +54,310 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
+
+body {
+display: flex;
+justify-content: center;
+max-width: 1200px;
+background-color: @graybackground;
+}
+
+.center-content {
+	justify-content: center;
+	align-content: center;
+}
+
+.center-items {
+	justify-items: center;
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+@whitecolor: white;
+@graybackground: #333;
+
+.container1 {
+	background: @graybackground;
+	list-style: none;
+	font-size: 1.2rem;
+	width: 35%;
+	border: 2px solid black;
+	border-radius: 30px;
+
+	header {
+		
+		color: @whitecolor;
+		margin-bottom: 20px;
+
+		.name-contact {
+
+			.header-info {
+				display: flex;
+				.flex-column();
+				.center-items();
+				margin-bottom: 20px;
+			}
+
+			h1{
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+			}
+			h3 {
+				font-size: 1.5rem;
+			}
+		}
+
+		.nav {
+			margin: 20px 2px 20px 2px;
+			display: flex;
+			justify-content: center;
+		}
+
+		a {
+			color: @whitecolor;
+			text-decoration: none;
+			font-size: 1.1rem;
+			margin: 0 auto;
+		}
+		.address {
+			display: flex;
+			justify-items: center;
+			justify-content: space-evenly;
+			font-size: 1.2rem;
+			background: #8a8080;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+	  }
+	
+	.Skills {
+		margin: 5% 1% 5% 1%;
+		color: @whitecolor;
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		li{
+			margin: 40px auto;
+			font-size: 1.5rem;
+			}
+		.bar{
+			background: #353b48;
+			display: flex;
+			.flex-column();
+			height: 3px;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-radius: 3px;
+			box-shadow: 0 0 10px #2187e7b3;
+			margin: 5% 0 5% 0;
+
+			span {
+				height: 2px;
+				float: left;
+				background: #2187e7;
+
+				}
+			.html{
+				width: 90%;
+				animation: html 2s;
+					}
+			.css{
+				width: 85%;
+				animation: css 2s;
+					}
+			.js {
+				width: 75%;
+				animation: js 2s;
+			}
+
+			.react {
+				width: 65%;
+				animation: react 2s;
+			}
+
+			@keyframes html {
+				0%{
+					width:0%;
+				}
+
+				100% {
+					width:90%;
+				}
+			}
+
+			@keyframes css {
+				0%{
+					width:0%;
+				}
+
+				100% {
+					width:85%;
+				}
+			}
+
+			@keyframes js {
+				0%{
+					width:0%;
+				}
+
+				100% {
+					width:75%;
+				}
+			}
+
+			@keyframes react {
+					0%{
+						width:0%;
+					}
+
+					100% {
+						width:65%;
+					}
+				
+			}
+				
+		  }
+		
+		
+		
+		
+	  }
+	  .Education {
+		color: @whitecolor;
+		
+
+		.Education-info{
+			margin: 5% 1% 5% 1%;
+
+			h1 {
+				font-size: 2.5rem;
+				margin: 5% 0 5% 0
+			}
+
+			h2 {
+				font-size: 2.0rem;
+				margin: 5% 0 5% 0
+			}
+			h3{
+				font-size: 1.5rem;
+				margin: 5% 0 5% 0
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
+
+		background-color: #e2ab9b;
+		
+		header{
+			background: @whitecolor;
+			color: black;
+			border: 1px solid black;
+			border-radius: 30px;
+
+			a {
+				font-size: 1.8rem;
+				margin: 2% auto;
+				color: black;
+			}
+
+
+			.nav {
+				.flex-column();
+				align-items: center;
+			}
+			h1 {
+				.center-items();
+			}
+
+			.address {
+				.flex-column();
+				.center-items();
+
+			}
+		}
+		
+	}
+		
+	}
+
+
+.container2 {
+	font-size: 1.5rem;
+	width: 65%;
+	background-color: @whitecolor;
+	border: 2px solid black;
+	border-radius: 30px;
+
+	.summary {
+		p {
+			margin: 0 2% 0 2%;
+			font-size: 1.6rem;
+		}
+	}
+
+	h1{
+		font-size: 3.5rem;
+		margin: 5% 2% 5% 2%;
+		display: flex;
+		justify-content: center;
+	}
+
+	h2{
+		font-size: 2.2rem;
+		margin: 1%;
+	}
+
+	h3{
+		font-size: 1.8rem;
+		margin: 1%;
+	}
+
+	h4{
+		font-size: 1.6rem;
+		margin: 1%;
+	}
+
+	li{
+		font-size: 1.4rem;
+		margin: 1%;
+	}
+
+	.work {
+		margin: 5% 1% 5% 1%;
+	}
+
+	.lang {
+		display: flex;
+		flex-direction: row ;
+	}
+
+	@media(max-width: 800px) {
+		background-color: cornflowerblue;
+	}
+
+	
+
+
+}
+	
+	
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
